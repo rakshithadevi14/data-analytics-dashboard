@@ -1,0 +1,74 @@
+body {
+    font-family: 'Times New Roman', Times, serif, ;
+    line-height: 1.6;
+    margin: 20px;
+    padding: 0;
+    background-color: #5ca8ff;
+}
+
+h1, h2, h3 {
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+    text-decoration: underline;
+}
+
+h2 {
+    margin-top: 20px;
+    text-decoration: underline;
+}
+
+p {
+    margin: 10px 0;
+}
+
+ul {
+    margin: 10px 0;
+    padding-left: 20px;
+}
+
+img {
+    max-width: 100%;
+    height: 200px;
+    display: block;
+    margin: 10px 0;
+}
+
+.section {
+    background-color: #fae7eb;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.section img {
+    max-width: 100%;
+    height: 200px;
+    display: block;
+    margin: 10px 0;
+}
+.container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+.fluctuatingImage {
+    position: absolute;
+    width: 300px; /* Adjust the size of the image */
+    height: auto;
+    transition: transform 1s ease-in-out;
+  }
+  @keyframes fluctuate {
+    0% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(300px); /* Move to the right */
+    }
+    100% {
+      transform: translateX(0); /* Move back to the original position */
+    }
+}
